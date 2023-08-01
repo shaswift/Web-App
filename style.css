@@ -1,0 +1,57 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Button styles */
+#generateBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+#generateBtn:hover {
+    background-color: #2980b9;
+}
+
+/* Result paragraph styles */
+#result, #computerChoice {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Computer choice styles */
+#computerChoice {
+    font-weight: bold;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    #generateBtn {
+        font-size: 16px;
+    }
+
+    #result, #computerChoice {
+        font-size: 20px;
+    }
+}

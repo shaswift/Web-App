@@ -1,6 +1,8 @@
 var generateBtn = document.getElementById("generateBtn")
 var result = document.getElementById("result")
 var computerChoiceDisplay = document.getElementById("computerChoice");
+var Round = document.getElementById("Round")
+var RoundNumber = 0
 generateBtn.addEventListener("click", function(){
    var randomNumber= Math.floor(Math.random() * 3);
    result.innerHTML = randomNumber ;
@@ -11,6 +13,9 @@ generateBtn.addEventListener("click", function(){
   } else if (randomNumber === 2) {
       computerChoiceDisplay.innerHTML = "Computer chooses: Scissor";
   }
+  RoundNumber = RoundNumber + 1
+  Round.innerHTML = "Round " +  parseInt(RoundNumber)
+  Round.style.color ="green"
 });
 
 
